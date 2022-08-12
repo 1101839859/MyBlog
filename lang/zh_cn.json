@@ -1,0 +1,11 @@
+{
+	"title":"进化1存档转换器",
+	"top_instruction":"1.删除原存档并开一把新存档，等到让你调整什么所谓的亮度的时候，退出游戏\n2.用下面那个按钮选择你游戏目录下EvolveCrack\\273350\\local\\USER0\\Profiles\\default\\attributes.xml\n3.点击下面的开始转换\n4.将生成的文件替换刚刚目录里的那个文件",
+	"selectsavebutton":"点击我选择存档文件位置！",
+	"attributeLabel":"当前文件路径（下方）：",
+	"defaultloc":"当你选择文件路径后，其会显示在此处",
+	"startbutton":"修改你的存档!",
+	"success_notice":"修改成功！",
+	"failed_attribute":"修改失败，非法的attribute.XML文件或文件不存在！",
+	"failed_base":"修改失败，attribute_base.xml不存在！"
+}
