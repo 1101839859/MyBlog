@@ -231,8 +231,21 @@ public class MainTool {
         JButton btn2=new JButton(config.getStartbutton());
         btn2.addActionListener(e -> {
             try {
-                tool.patch(oldfiletext.getText(),tool);
-                JOptionPane.showMessageDialog(null,config.getSuccessNotice(),"好耶！/Yeah!!!",JOptionPane.PLAIN_MESSAGE);
+
+                if(!oldfiletext.getText().contains("attributes.xml"))
+                {
+                   int result =  JOptionPane.showConfirmDialog(null,config.getWarning_notice(),"☎☏✄☪WARNING☯✡※〓", JOptionPane.YES_NO_OPTION, JOptionPane.WARNING_MESSAGE);
+                   if(result==0)
+                   {
+                       tool.patch(oldfiletext.getText(),tool);
+                       JOptionPane.showMessageDialog(null,config.getSuccessNotice(),"好耶！/Yeah!!!",JOptionPane.PLAIN_MESSAGE);
+                   }
+                }
+                else
+                {
+                    tool.patch(oldfiletext.getText(),tool);
+                    JOptionPane.showMessageDialog(null,config.getSuccessNotice(),"好耶！/Yeah!!!",JOptionPane.PLAIN_MESSAGE);
+                }
 
             } catch (IOException ex) {
                 ex.printStackTrace();
@@ -243,7 +256,7 @@ public class MainTool {
         about.setLineWrap(true);
         about.setEditable(false);
         about.setBackground(getRandomColor());
-        about.setText("该程序由B站Pinenutn制作。原创方法！严禁倒卖，商用！是的，我不擅长绘制Swing，所以有人乐意写界面也挺好的，只要写明方法来源即可。\n I know that the GUI for this software isn't the best.\nYou have my full permission to make a better UI for it.   Commercial use is prohibited.\nIf you do, please give me credit as the original author.\nI will be continously working to make this save file converter the best it can be.\n[SaveFile is take from discord:Archetype_4#3490]");
+        about.setText("该程序由B站Pinenutn制作。存档来源：discord:Archetype_4#3490 原创方法！严禁倒卖，商用！是的，我不擅长绘制Swing，所以有人乐意写界面也挺好的，只要写明方法来源即可。\n[SaveFile from discord:Archetype_4#3490] \n By Pinenut : I know that the GUI for this software isn't the best.You have my full permission to make a better UI for it.   Commercial use is prohibited.If you do, please give me credit as the original author.\nI will be continously working to make this save file converter the best it can be.");
         if(!randomc.exists())
         {
             jPanel.setBackground(getRandomColor());
@@ -259,7 +272,7 @@ public class MainTool {
         JTextArea github = new JTextArea();
         github.setBackground(getRandomColor());
         github.setEditable(false);
-        github.setText("Github地址/Website:https://github.com/PaienNate/EvolveLegacySaveConvertor");
+        github.setText("Github地址/Website:https://github.com/PaienNate/EvolveLegacySaveConvertor 该版本语言作者(Lang file's author):" + config.getAuthor());
         //介绍页面
         jPanel.add(instruction);
         //旧文件

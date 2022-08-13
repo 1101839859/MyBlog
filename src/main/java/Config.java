@@ -91,4 +91,26 @@ public class Config {
     public String failedAttribute;
     @com.alibaba.fastjson.annotation.JSONField(name = "failed_base")
     public String failedBase;
+
+    public String getAuthor() {
+        return author;
+    }
+
+    public void setAuthor(String author) {
+        this.author = author;
+    }
+
+    @com.alibaba.fastjson.annotation.JSONField(name = "author")
+    public String author;
+
+    @com.alibaba.fastjson.annotation.JSONField(name = "warning_notice")
+    public String warning_notice;
+
+    public String getWarning_notice() {
+        return warning_notice;
+    }
+
+    public void setWarning_notice(String warning_notice) {
+        this.warning_notice = warning_notice;
+    }
 }

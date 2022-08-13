@@ -1,0 +1,13 @@
+{
+	"title":"Evolve Save File Converter",
+	"top_instruction":"1. Click The 'Set Attributes.xml Location' Button Below To Select Your Emulator's Attributes.xml File. You Will Find The Attributes.xml File Inside The 'EvolveCrack' File Which Can Be Found Inside The 'bin64_SteamRetail' File Where Your Emulator Is Installed. The File Path You Must Follow Inside The 'EvolveCrack' File Is As Such:  （EvolveCrack\\）273350\\remote\\USER0\\Profiles\\default\\attributes.xml\n2. Click The 'Convert' Button Below To Convert Your Save File\n3.Launch The Game",
+	"selectsavebutton":"Set Attributes.xml Location",
+	"attributeLabel":"Your File Path：",
+	"defaultloc":"The Path To Your Attributes.xml Will Be Shown Here",
+	"startbutton":"Convert",
+	"success_notice":"Conversion Successful",
+	"failed_attribute":"Conversion Failed. Attributes.xml Not Found Or Invalid.",
+	"failed_base":"Conversion Failed. attributes_base.xml Not Found ",
+	"author":"Archetype_4",
+	"warning_notice":"Incorrect File Chosen. The Selected File Is Not The 'attributes.xml' File. Make Sure To Select The 'attributes.xml' File, As Any File Chosen Other Than That Will Be Broken Upon Completing Conversion. Do You Wish To Continue With The Selected File?"
+}
